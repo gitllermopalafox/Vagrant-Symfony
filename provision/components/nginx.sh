@@ -19,7 +19,7 @@ server {
      
     location / {
         # try to serve file directly, fallback to app.php
-        try_files $uri /app.php\$is_args\$args;
+        try_files \$uri /app.php\$is_args\$args;
     }
 
     error_page 404 /404.html;
